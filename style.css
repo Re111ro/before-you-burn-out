@@ -1,0 +1,153 @@
+/* BASIC COLORS AND PAGE STYLE */
+body {
+  margin: 0;
+  background-color: #fffafc;
+  color: #3f2947;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+a { color: #865187; }
+a:hover { color: #b26497; }
+
+/* HEADER */
+header {
+  background-color: #fffafc;
+  border-bottom: 1px solid #f0dce8;
+  padding: 19px 0;
+}
+.header-content, nav, .hero-content, .cards, .footer-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-content, .footer-content { justify-content: space-between; }
+.logo { text-decoration: none; font-size: 19px; color: #4c3052; }
+.logo strong { color: #ab70a3; }
+nav { flex-wrap: wrap; gap: 22px; }
+nav a { text-decoration: none; font-size: 14px; font-weight: bold; }
+
+/* TOP SECTION */
+.hero {
+  background: linear-gradient(to right, #fff9f7, #f7eaf5);
+  padding: 90px 0;
+}
+.hero-content { gap: 65px; }
+.hero-text, .hero-image { width: 50%; }
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 58px;
+  line-height: 1.14;
+  margin: 20px 0;
+}
+h1 em, h2 em { color: #ae72a5; }
+.hero-text > p { color: #655769; }
+.small-heading { color: #ab6c92; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+.button {
+  display: inline-block;
+  background-color: #78517d;
+  color: white;
+  text-decoration: none;
+  padding: 13px 22px;
+  margin-top: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.button:hover { background-color: #98639a; color: white; }
+.hero-note { font-size: 12px; padding-top: 12px; }
+.hero-image { text-align: center; }
+.hero-image img {
+  width: 88%;
+  max-width: 430px;
+  border: 10px solid white;
+  border-radius: 45% 45% 28% 28%;
+  box-shadow: 0 14px 35px #dfc5d6;
+}
+.image-note {
+  background-color: white;
+  border: 1px solid #ecd4e4;
+  border-radius: 16px;
+  padding: 10px;
+  margin: -20px auto 0;
+  width: 65%;
+  position: relative;
+  font-size: 14px;
+  color: #9b608b;
+}
+
+/* CONTENT SECTIONS */
+.section { padding: 75px 0; }
+.soft-background { background-color: #faf0f8; }
+h2 { font-family: Georgia, serif; font-size: 41px; line-height: 1.2; margin: 10px 0 22px; }
+.introduction { max-width: 780px; color: #62566a; margin-bottom: 30px; }
+.cards { align-items: stretch; flex-wrap: wrap; }
+.card {
+  flex: 1;
+  min-width: 230px;
+  padding: 26px;
+  border-radius: 22px;
+  margin-bottom: 4px;
+}
+.card h3 { font-size: 20px; margin: 12px 0; }
+.card p { margin: 10px 0; }
+.card ul { padding-left: 22px; }
+.card li { margin-bottom: 10px; }
+.card-icon { font-size: 37px; color: #ad6c9a; }
+.peach { background-color: #ffe8e5; }
+.purple { background-color: #e9e2f8; }
+.pink { background-color: #f9e3ef; }
+.white-card { background-color: white; border: 1px solid #efdae9; }
+.example { color: #876682; font-size: 14px; font-style: italic; }
+.source-line { font-size: 13px; color: #766478; margin-top: 22px; }
+.note-box {
+  margin-top: 26px;
+  padding: 20px 25px;
+  background-color: #fff8f1;
+  border-left: 5px solid #cc95b0;
+  border-radius: 10px;
+}
+.note-box p { margin: 5px 0 0; }
+.quote-box {
+  background-color: white;
+  border: 1px solid #ebd5e5;
+  color: #704f75;
+  text-align: center;
+  border-radius: 20px;
+  padding: 25px;
+  margin-top: 28px;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-style: italic;
+}
+.quote-box span { display: block; font: normal 12px Arial, sans-serif; margin-top: 9px; }
+
+/* REFERENCES AND FOOTER */
+.references p {
+  background-color: #fff4f9;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+}
+.disclaimer { background-color: #f5eff9; padding: 18px; border-radius: 10px; font-size: 14px; }
+footer { background-color: #51395a; color: white; padding: 20px 0; }
+footer p { margin: 0; }
+footer a { color: white; }
+
+/* A SIMPLE ADJUSTMENT FOR MOBILE SCREENS */
+@media (max-width: 760px) {
+  .header-content, .hero-content, .footer-content { flex-direction: column; text-align: center; }
+  nav { justify-content: center; gap: 12px; }
+  .hero { padding: 45px 0; }
+  .hero-content { gap: 35px; }
+  .hero-text, .hero-image { width: 100%; }
+  .hero h1 { font-size: 39px; }
+  .section { padding: 50px 0; }
+  h2 { font-size: 32px; }
+  .card { min-width: 75%; }
+}
